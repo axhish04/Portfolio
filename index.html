@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ashish Chaudhary Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #1fed26;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f0eeee;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ashish Chaudhary</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+<section id="home-section" class="hero">
+  <div class="home-slider owl-carousel">
+    <div class="slider-item">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-between" data-scrollax-parent="true" style="min-height: 100vh;">
+
+          <!-- Left Column: Original Content -->
+          <div class="col-md-5 d-flex align-items-center ftco-animate">
+            <div class="text">
+              <span class="subheading">Hello!</span>
+              <h1 class="mb-4 mt-3">I'm <span>Ashish Chaudhary</span></h1>
+
+              <!-- Typing animation -->
+              <span id="typing-animation"></span>
+
+              <script>
+                const typingAnimationElement = document.getElementById('typing-animation');
+                const typingTexts = ["Engineer", "Ethical Hacker", "Developer"];
+                let typingIndex = 0;
+                let charIndex = 0;
+
+                function typeText() {
+                  if (charIndex < typingTexts[typingIndex].length) {
+                    typingAnimationElement.textContent += typingTexts[typingIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeText, 150);
+                  } else {
+                    setTimeout(eraseText, 2000);
+                  }
+                }
+
+                function eraseText() {
+                  if (charIndex > 0) {
+                    typingAnimationElement.textContent = typingTexts[typingIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(eraseText, 100);
+                  } else {
+                    typingIndex = (typingIndex + 1) % typingTexts.length;
+                    setTimeout(typeText, 500);
+                  }
+                }
+
+                document.addEventListener("DOMContentLoaded", () => {
+                  typeText();
+                });
+              </script>
+
+              <br><br>
+              <h2>A B.tech CSE Student</h2>
+              <a href="https://github.com/axhish04" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a>
+            </div>
+          </div>
+
+<!-- Right Column: Certificates Carousel with heading and enlarged window -->
+<div class="col-md-7 d-flex align-items-center justify-content-center ftco-animate">
+  <div class="d-flex flex-column align-items-center w-100">
+
+    <!-- Heading -->
+    <h2 class="mb-4 text-white font-weight-bold text-uppercase" style="letter-spacing: 2px;">Certifications</h2>
+
+    <!-- Carousel -->
+    <div class="d-flex align-items-center w-100" style="max-width: 1000px;">
+
+
+      <!-- Carousel -->
+      <div class="certificates-carousel owl-carousel w-100 px-2">
+        <!-- Certificate 1 -->
+        <div class="item">
+          <div class="card bg-light shadow p-3 border-0" style="min-height: 360px;">
+            <a href="https://coursera.org/verify/76EZEUT8P6SB" target="_blank">
+  				<img src="images/certi1.png" class="img-fluid rounded zoom-effect" style="max-height: 450px; object-fit: contain; width: 100%;">
+			</a>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="item">
+          <div class="card bg-light shadow p-3 border-0" style="min-height: 360px;">
+            <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS90S83420029420006291" target="_blank">
+  				<img src="images/certi2.png" class="img-fluid rounded zoom-effect" style="max-height: 450px; object-fit: contain; width: 100%;">
+			</a>
+          </div>
+        </div>
+
+         <!-- Certificate 3 -->
+        <div class="item">
+          <div class="card bg-light shadow p-3 border-0" style="min-height: 360px;">
+            <a href="https://drive.google.com/file/d/1vvPilHYuiSUzp1i1KOwkW5kWfnJF1eff/view?usp=sharing" target="_blank">
+  				<img src="images/certi3.png" class="img-fluid rounded zoom-effect" style="max-height: 450px; object-fit: contain; width: 100%;">
+			</a>
+          </div>
+        </div>
+		<!-- Certificate 4 -->
+        <div class="item">
+          <div class="card bg-light shadow p-3 border-0" style="min-height: 360px;">
+            <a href="https://www.credly.com/users/ashish-chaudhary.1ee9c2f8/edit" target="_blank">
+  				<img src="images/credly.svg" class="img-fluid rounded zoom-effect" style="max-height: 450px; object-fit: contain; width: 100%;">
+			</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Ashish Chaudhary</span></p>
+										<p><span class="title-s">Student at Graphic Era Hill University </span> <span></span></p>
+										<!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
+										<p><span class="title-s">Address: </span> <span>Dehradun, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>C++</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Problem Solving</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Cyber Security</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Web Development</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Hey there! 👋 I'm Ashish Chaudhary, a B.Tech Computer Science student at Graphic Era Hill University, 
+									Dehradun. I'm deeply passionate about problem-solving, ethical hacking, and software development, and I 
+									love building real-world tech solutions that make an impact.</p>
+
+                                <p>I have hands-on experience with Python, C, C++, and Java, along with skills in cryptography and networking 
+									using tools like Cisco Packet Tracer. My development interests span from GUI-based applications to secure 
+									authentication systems, and I’m always exploring innovative ways to apply my knowledge.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									
+									<li class="d-flex"><span>Domain:</span> <span>Cyber Security, Web Development, Software Development</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Technology</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>VsCode, Packet Tracer, Wireshark &amp; XAMPP </span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>JavaScript, HTML, CSS, Java, MySql</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Badminton</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p><a href="https://www.linkedin.com/in/ashish-chaudhary-b8538b371" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+          </div>
+        </div>
+
+
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-Present</span>
+    					<h2>Bachelor of Technology</h2>
+    					<span class="position">Graphic Era University</span><br><br>
+						<span class="position">CGPA : 7.69/10</span>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-20</span>
+    					<h2>10+2</h2>
+    					<span class="position">Glacier Public School</span>
+    					<p class="mt-4">Grade: First division.</p>
+    				</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+	<br><br>
+		<div class="row">
+			<h1 class="big-4">Academics And Achievements</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Hero Session 9</span>
+						<p class="mt-4"> Guided a high-performing team of 4 in Hero Session 9, achieving all project milestones ahead of schedule through
+ effective prioritization and deadline management. 
+							
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">38th National Games</span>
+						<p class="mt-4"> Participated as a performing artist during the Inauguration Ceremony of the “38th National Games 2025”,
+ DEHRADUN , UTTARAKHAND (Represented the university at a national-level event, contributing to a large-scale
+ artistic performance showcasing culture and unity) 
+							
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+
+<br><br>
+		<div class="row">
+			<h1 class="big-4">Extra-Curricular</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">NPTEL Certification</span>
+						<p class="mt-4">  Awarded NPTEL Elite Certificate in “Google Cloud Computing Foundations”– 2024
+ (A collaboration between NPTEL and Google Cloud, recognized for performance in cloud concepts and applications) 
+							
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">AI and ML (Coursera Certified)</span>
+						<p class="mt-4"> Completed “Microsoft Azure for AI and Machine Learning”– Coursera 2024 (Learned scalable cloud-based
+ AI/ML workflows using Azure ML Studio, APIs, and deployment services)– 2024 
+							
+						</p>
+					</div>
+
+				</div>
+			</div>
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/axhish04/3level_Authentication_System"  target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/axhish04/3level_Authentication_System" target="_blank">3-Level Authentication System</a></h3>
+                <p>Created a high-security 3-level authentication system requiring login password, security question, and favorite color sequence to protect sensitive data.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/axhish04/Memory_Mapper00" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/axhish04/Memory_Mapper00" target="_blank">Memory Mapper</a></h3>
+                <p>A Visualization of data allocation in memory To develope an interactive web-based tool using React.js and Node.js to visualize real-time contiguous memory allocation and fragmentation in operating systems.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/axhish04/Static_code_analyzer00" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/axhish04/Static_code_analyzer00" target="_blank">Static Code Analyzer</a></h3>
+                <p>A static code analyzer that can analyze C, C++, and Python code for potential errors and code quality issues.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/axhish04/Secure_File_Hiding_-_Retrieval" target="_blank" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/axhish04/Secure_File_Hiding_-_Retrieval" target="_blank">Secure File Hiding and Retrival</a></h3>
+				  <p> A highly secure file hiding and retrieval system using Java and SQL, protecting 100 % of stored files with encryption. Implemented JDBC to establish a connection between the Java application and SQL database.
+ Skills: Java, SQL, JDBC, Data Encryption</p>
+				</div>
+			  </div>
+			</div>
+			
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve coding problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/axhish04" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5 justify-content-center text-center">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Dehradun, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">+91 7668206946</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:2004ashishchaudhary@gmail.com">2004ashishchaudhary@gmail.com</a></p>
+	          </div>
+          </div>
+          
+
+		  <div class="container">
+			<br>
+			<br>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="www.linkedin.com/in/ashish-chaudhary-b8538b371"><span class="icon-linkedin"></span></a></li>  
+				      <li class="ftco-animate"><a href="https://www.instagram.com/ashishchaudhary_04/"><span class="icon-instagram"></span></a></li>
+					 <li class="ftco-animate"> <a href="https://www.hackerrank.com/profile/Ashish_04" target="_blank" > <span class="icon-globe"></span> </a> </li>
+
+
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    <script>
+    $('.certificates-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      smartSpeed: 600,
+      items: 1,
+      navText: [
+        "<span class='ion-ios-arrow-back'></span>",
+        "<span class='ion-ios-arrow-forward'></span>"
+      ]
+    });
+  </script>
+
+    
+  </body>
+</html>
